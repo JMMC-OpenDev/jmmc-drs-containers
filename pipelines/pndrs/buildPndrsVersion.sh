@@ -1,5 +1,10 @@
 #!/bin/bash
-
+#
+# buildPndrsVersion.sh <PNDRSVERSION> <SVNREV>
+#
+#   This script retrieve PNDRS sources from svn and install it as a given INTROOT.
+#   It may be called by a Dockerfile on multiple versions
+#
 
 function do_pndrs_version() {
   PNDRSVERSION=$1
